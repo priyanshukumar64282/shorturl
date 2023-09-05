@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-image: url(images/background.jpg);
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.main{
+     height: 100%;
+}
+.grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    margin: 150px auto;
+    height: 370px;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5)  !important;
+    box-shadow:5px 5px 5px 5px rgba(1,1,1,0.2);
+    border-radius: 10px;
+}
+.card_header h3{
+    color: white;
+    padding:10px  50px;
+    font-size: 64px;
+    font-weight: 200;
+}
+.card_container{
+    margin: 0 10px;
+}
+.card_content{
+    margin: 10px 0;
+    
+    
+}
+#long_url , #short_url{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 2, 0.377);
+}
+
+input[type=text]:focus {
+    background-color: rgb(216, 216, 198);
+    border: none;
+    outline: none;
+  }
+#copy{
+    float: right;
+    margin-right: 20px;
+    background-color:#be9b32;
+    width: 50px;
+    color: black;
+
+}
+#short_btn{
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #be9b32;
+}
+#short_btn:hover , #copy:hover{
+    background-color: rgb(188, 207, 143);
+}
+
+
+@media (max-width:786px){
+    body{
+        background-size: cover;
+        height:100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .card{
+        max-height:300px;
+        align-self:center;
+    }
+    .card_header h3{
+        font-size: 40px;
+    }
+   .card_content{
+    flex-direction: column;
+   }
+    #copy{
+        float: right;
+        margin-right: 20px;
+        background-color:#be9b32;
+        width: 50px;
+        color: black;
+    }
+    #long_url , #short_url{
+        width: 80%;
+        height: 30px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 2, 0.377);
+    }
+}
